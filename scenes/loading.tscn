@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://res/images/bg_white.png" type="Texture" id=1]
 [ext_resource path="res://res/images/loading/1k.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://res/images/loading/8k.png" type="Texture" id=9]
 [ext_resource path="res://res/images/loading/original_character.png" type="Texture" id=10]
 [ext_resource path="res://res/images/loading/Loading.png" type="Texture" id=11]
+[ext_resource path="res://scripts/loading_timer.gd" type="Script" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -47,7 +48,7 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 808.127, 372.594 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 12
+frame = 13
 playing = true
 _sections_unfolded = [ "Transform" ]
 
@@ -61,5 +62,16 @@ texture = ExtResource( 10 )
 
 position = Vector2( 582.104, 184.995 )
 texture = ExtResource( 11 )
+
+[node name="Timer" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = false
+script = ExtResource( 12 )
+_sections_unfolded = [ "Pause" ]
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_Timer_timeout"]
 
 
