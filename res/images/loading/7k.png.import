@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/play2.png-d80c8e5f76145995ca1f54bd034a66eb.stex"
+path="res://.import/7k.png-d0ba30fe1c943d69ebe315d260d8babb.stex"
 
 [deps]
 
-source_file="res://res/play2.png"
-source_md5="94e306c0a2a70641edeb811ea2b833da"
+source_file="res://res/images/loading/7k.png"
+source_md5="bc4b0f4bfd12978910030667918e660a"
 
-dest_files=[ "res://.import/play2.png-d80c8e5f76145995ca1f54bd034a66eb.stex" ]
-dest_md5="547be9d57aa48e6e329dda3a3edb3f8e"
+dest_files=[ "res://.import/7k.png-d0ba30fe1c943d69ebe315d260d8babb.stex" ]
+dest_md5="261200de59ab52d27f968cd9f14c6da1"
 
 [params]
 

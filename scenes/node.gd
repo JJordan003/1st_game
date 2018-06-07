@@ -1,4 +1,4 @@
-extends TextureButton
+extends Node2D
 
 # class member variables go here, for example:
 # var a = 2
@@ -13,6 +13,3 @@ func _ready():
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
 #	pass
-func _pressed():
-	get_tree().change_scene("res://scenes/loading.tscn")
-	pass
