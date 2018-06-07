@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pobrane (1).jpg-e7c423299c9743a5943512fe69317462.stex"
+path="res://.import/bg_black.jpg-ed9de9e0e247816a810546fd179ea8cf.stex"
 
 [deps]
 
-source_file="res://res/pobrane (1).jpg"
-source_md5="f67c8529ce3ead21d109cff8947f164c"
+source_file="res://res/bg_black.jpg"
+source_md5="f8cba63838ef8b3528cef2d6d2f8707a"
 
-dest_files=[ "res://.import/pobrane (1).jpg-e7c423299c9743a5943512fe69317462.stex" ]
-dest_md5="d0da6f2fb86c9d5ed6b56ec5654c50a9"
+dest_files=[ "res://.import/bg_black.jpg-ed9de9e0e247816a810546fd179ea8cf.stex" ]
+dest_md5="0e6b8ad852ce58b9035120c0ab4df783"
 
 [params]
 
