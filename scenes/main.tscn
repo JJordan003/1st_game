@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://res/images/bg_white.png" type="Texture" id=1]
-[ext_resource path="res://scenes/player_movement.gd" type="Script" id=2]
+[ext_resource path="res://scripts/player_movement.gd" type="Script" id=2]
 [ext_resource path="res://res/images/circle.png" type="Texture" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
@@ -9,7 +9,7 @@
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="Control" type="Control" index="0"]
+[node name="Control" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0

@@ -15,10 +15,10 @@
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "default",
-"speed": 8.0
+"speed": 15.0
 } ]
 
 [node name="Control" type="Control" index="0"]
@@ -47,7 +47,7 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 808.127, 372.594 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 6
+frame = 12
 playing = true
 _sections_unfolded = [ "Transform" ]
 
