@@ -1,26 +1,28 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://res/pobrane.jpg" type="Texture" id=1]
 [ext_resource path="res://scenes/background.gd" type="Script" id=2]
 [ext_resource path="res://res/pobrane (1).jpg" type="Texture" id=3]
 [ext_resource path="res://res/Play1.png" type="Texture" id=4]
 [ext_resource path="res://res/Play2.png" type="Texture" id=5]
+[ext_resource path="res://scenes/TextureButton.gd" type="Script" id=6]
 
 [node name="root" type="Node2D" index="0"]
 
 [node name="background" type="Sprite" parent="." index="0"]
 
-position = Vector2( 960, 590 )
-scale = Vector2( 6.68535, 6.7824 )
+position = Vector2( 960, 540 )
+scale = Vector2( 6.4, 6.45 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="background" index="0"]
 
-position = Vector2( -88.812, 1.70826 )
-scale = Vector2( 0.211388, 1.07974 )
+position = Vector2( -100, 0 )
+scale = Vector2( 0.2, 0.92 )
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="TextureButton" type="TextureButton" parent="background/Sprite" index="0"]
 
@@ -46,6 +48,7 @@ group = null
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 expand = true
+script = ExtResource( 6 )
 _sections_unfolded = [ "Textures" ]
 
 
