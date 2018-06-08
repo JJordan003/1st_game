@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/play2.png-db730214c01bbabbea32e8442b1f622f.stex"
+path="res://.import/button_options.png-80816772827c6e5b0765eb6b1bce887d.stex"
 
 [deps]
 
-source_file="res://res/images/play2.png"
-source_md5="94e306c0a2a70641edeb811ea2b833da"
+source_file="res://res/images/buttons/button_options.png"
+source_md5="02100957e0866196d6afeda0f34b1ad2"
 
-dest_files=[ "res://.import/play2.png-db730214c01bbabbea32e8442b1f622f.stex" ]
-dest_md5="547be9d57aa48e6e329dda3a3edb3f8e"
+dest_files=[ "res://.import/button_options.png-80816772827c6e5b0765eb6b1bce887d.stex" ]
+dest_md5="be6956653f371dd86191c4259a55c52f"
 
 [params]
 

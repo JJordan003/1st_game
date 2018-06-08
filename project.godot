@@ -14,6 +14,10 @@ config/name="1st_game"
 run/main_scene="res://scenes/menu.tscn"
 config/icon="res://res/images/icon.png"
 
+[autoload]
+
+loading="*res://scripts/loading.gd"
+
 [display]
 
 window/size/width=1600
