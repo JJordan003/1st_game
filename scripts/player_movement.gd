@@ -3,7 +3,7 @@ extends Area2D
 export (float) var SPEED
 var screensize
 var prop_gravity = 0
-var ispressed = 0
+var ispressed = false
 const MAX_ACCELERATION = 100
 const MIN_ACCELERATION = -100
 var space_cooldown = 0
@@ -26,10 +26,10 @@ func _process(delta):
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * SPEED
 		
-	if Input.is_key_pressed("KEY_SPACE") and ispressed == 0:
-		prop_gravity = clamp(-1, -1, 1)
+	if Input.is_key_pressed("KEY_SPACE") and ispressed == false:
+#		prop_gravity = clamp(-1, -1, 1)
 		print("SPACE")
-		ispressed = 1
+		ispressed = true
 	if !Input.is_key_pressed("KEY_SPACE") and ispressed == 1:
 		ispressed = 0
 	
