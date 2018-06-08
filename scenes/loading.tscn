@@ -24,7 +24,7 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[node name="root" type="Control" index="0"]
+[node name="root" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -67,7 +67,7 @@ position = Vector2( 808.127, 372.594 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 12
+frame = 11
 playing = true
 _sections_unfolded = [ "Transform" ]
 
