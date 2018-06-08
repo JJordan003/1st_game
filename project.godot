@@ -25,6 +25,22 @@ window/size/height=900
 window/size/resizable=false
 window/stretch/mode="2d"
 
+[fps]
+
+Max Renderable Elements=false
+
+[global]
+
+Max Renderable Elements=false
+
+[lock]
+
+Max Renderable Elements=false
+
+[max]
+
+Max Renderable Elements=false
+
 [rendering]
 
 quality/intended_usage/framebuffer_allocation=0
