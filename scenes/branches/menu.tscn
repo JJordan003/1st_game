@@ -9,7 +9,7 @@
 [ext_resource path="res://scripts/menu_button_options.gd" type="Script" id=7]
 [ext_resource path="res://res/images/buttons/button_endgame.png" type="Texture" id=8]
 [ext_resource path="res://scripts/menu_button_end.gd" type="Script" id=9]
-[ext_resource path="res://res/images/highlight.png" type="Texture" id=10]
+[ext_resource path="res://res/images/placeholder.png" type="Texture" id=10]
 
 [node name="node_menu" type="Node2D" index="0"]
 
@@ -25,8 +25,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 [node name="sprite_white" type="Sprite" parent="bg_black" index="0"]
 
 position = Vector2( -500, 0 )
-rotation = 1.5708
-scale = Vector2( 0.5625, 0.3 )
+scale = Vector2( 0.25, 1 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
@@ -36,11 +35,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -616.0
-margin_top = 540.0
-margin_right = -297.0
-margin_bottom = 585.0
-rect_rotation = 270.0
+margin_left = -320.0
+margin_top = -161.0
+margin_bottom = -116.0
+rect_scale = Vector2( 2, 1.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -62,11 +60,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -571.0
-margin_top = 540.0
-margin_right = -239.0
-margin_bottom = 587.0
-rect_rotation = -90.0
+margin_left = -332.0
+margin_top = -80.0
+margin_bottom = -33.0
+rect_scale = Vector2( 2, 1.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -87,11 +84,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -512.0
-margin_top = 533.0
-margin_right = -286.0
-margin_bottom = 591.0
-rect_rotation = -90.0
+margin_left = -226.0
+margin_bottom = 58.0
+rect_scale = Vector2( 2, 1.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -113,11 +108,11 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -454.0
-margin_top = 533.0
-margin_right = -153.0
-margin_bottom = 580.0
-rect_rotation = -90.0
+margin_left = -300.0
+margin_top = 80.0
+margin_right = 1.0
+margin_bottom = 127.0
+rect_scale = Vector2( 2, 1.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -131,12 +126,13 @@ shortcut = null
 group = null
 texture_normal = ExtResource( 8 )
 script = ExtResource( 9 )
+_sections_unfolded = [ "Rect" ]
 
-[node name="highlight" type="Sprite" parent="bg_black/sprite_white" index="4"]
+[node name="Sprite" type="Sprite" parent="bg_black/sprite_white" index="4"]
 
-position = Vector2( -55.949, 0.21521 )
-rotation = -1.5708
-scale = Vector2( 1.01708, 0.658568 )
+position = Vector2( 0, -400 )
+scale = Vector2( 1, 0.25 )
 texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
 
 
