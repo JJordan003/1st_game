@@ -7,10 +7,10 @@ path="res://.import/button_back.png-99fc458b27aaa6f1d1536cc0e3e8cee8.stex"
 [deps]
 
 source_file="res://res/images/buttons/button_back.png"
-source_md5="2cccbf82f716b94d4ecc79e47100ccad"
+source_md5="1e77f6d79bc8e2bc29496da5002cb8b1"
 
 dest_files=[ "res://.import/button_back.png-99fc458b27aaa6f1d1536cc0e3e8cee8.stex" ]
-dest_md5="1c5a38f203b358442a1c3ebb38b3e01d"
+dest_md5="28daaba83d57c409cf56d957ba219952"
 
 [params]
 

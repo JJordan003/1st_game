@@ -7,10 +7,10 @@ path="res://.import/button_newgame.png-64cbddbbd33b239e90e359236057876c.stex"
 [deps]
 
 source_file="res://res/images/buttons/button_newgame.png"
-source_md5="d238250c4b6c169f77a04df445719749"
+source_md5="84485dffddf3c988cb1e12489084a2af"
 
 dest_files=[ "res://.import/button_newgame.png-64cbddbbd33b239e90e359236057876c.stex" ]
-dest_md5="0ec1aedef5f9c69c54e229431a1c9d83"
+dest_md5="8b71a9109c968642a9efb65a9c1131bc"
 
 [params]
 

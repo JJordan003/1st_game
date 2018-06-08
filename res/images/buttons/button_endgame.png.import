@@ -7,10 +7,10 @@ path="res://.import/button_endgame.png-997ee69d1c96029ba65f44dfb7c039a2.stex"
 [deps]
 
 source_file="res://res/images/buttons/button_endgame.png"
-source_md5="84a66a39ae200237460bfb282269938f"
+source_md5="3ae53efa6d14fb2d28773306ba3b4d94"
 
 dest_files=[ "res://.import/button_endgame.png-997ee69d1c96029ba65f44dfb7c039a2.stex" ]
-dest_md5="0bebfec590bf1b97d7d200bdcad9157a"
+dest_md5="a70d7b84052e919a4db3fe462168350f"
 
 [params]
 

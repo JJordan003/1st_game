@@ -16,6 +16,6 @@ func _ready():
 func _pressed():
 	var x = preload("res://scenes/branches/menu.tscn").instance()
 	print(x)
-	get_parent().get_parent().add_child(x)
-	get_parent().free()
+	get_parent().get_parent().get_parent().add_child(x)
+	get_parent().get_parent().free()
 	pass

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/button_options.png-80816772827c6e5b0765eb6b1bce887d.stex"
+path="res://.import/button_controls.png-7fe33adca5468cb6e74a2bebf571091f.stex"
 
 [deps]
 
-source_file="res://res/images/buttons/button_options.png"
-source_md5="eaf0f167e2a2b4794799ea287c7fe35e"
+source_file="res://res/images/buttons/button_controls.png"
+source_md5="c25ba6669a01c2a39f95714ffebe5f7a"
 
-dest_files=[ "res://.import/button_options.png-80816772827c6e5b0765eb6b1bce887d.stex" ]
-dest_md5="62c1dd13e9fd2abc8266b5869f1a49be"
+dest_files=[ "res://.import/button_controls.png-7fe33adca5468cb6e74a2bebf571091f.stex" ]
+dest_md5="941356cc4c505ae4f1038b3e045fbbd5"
 
 [params]
 
