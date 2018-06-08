@@ -1,6 +1,6 @@
 extends Area2D
 
-export (float) var SPEED = 200
+export (float) var SPEED
 var screensize
 
 func _ready():
