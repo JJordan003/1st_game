@@ -44,7 +44,9 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 2 )
-SPEED = 400.0
+SPEED = 500
+JUMP_HEIGHT_REVERSED = 20
+GRAVITY = 25
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="0"]
 
