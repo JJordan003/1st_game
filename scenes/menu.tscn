@@ -25,7 +25,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="bg_black" type="Sprite" parent="node" index="0"]
 
-position = Vector2( 960, 540 )
+position = Vector2( 800, 450 )
+scale = Vector2( 0.833333, 0.833333 )
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
