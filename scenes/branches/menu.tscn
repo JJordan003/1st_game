@@ -11,31 +11,18 @@
 [ext_resource path="res://scripts/menu_button_end.gd" type="Script" id=9]
 [ext_resource path="res://res/images/highlight.png" type="Texture" id=10]
 
-[node name="root" type="Control" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="node_menu" type="Node2D" parent="." index="0"]
+[node name="node_menu" type="Node2D"]
 
 _sections_unfolded = [ "Transform" ]
 
-[node name="bg_white" type="Sprite" parent="node_menu" index="0"]
+[node name="bg_white" type="Sprite" parent="." index="0"]
 
 position = Vector2( 800, 450 )
 scale = Vector2( 0.833333, 0.833333 )
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="sprite_black" type="Sprite" parent="node_menu/bg_white" index="0"]
+[node name="sprite_black" type="Sprite" parent="bg_white" index="0"]
 
 position = Vector2( -500, 0 )
 rotation = 1.5708
@@ -43,7 +30,7 @@ scale = Vector2( 0.5625, 0.3 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="button_new" type="TextureButton" parent="node_menu/bg_white/sprite_black" index="0"]
+[node name="button_new" type="TextureButton" parent="bg_white/sprite_black" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -70,7 +57,7 @@ expand = true
 script = ExtResource( 4 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="button_load" type="TextureButton" parent="node_menu/bg_white/sprite_black" index="1"]
+[node name="button_load" type="TextureButton" parent="bg_white/sprite_black" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -96,7 +83,7 @@ texture_normal = ExtResource( 5 )
 expand = true
 _sections_unfolded = [ "Rect" ]
 
-[node name="button_op" type="TextureButton" parent="node_menu/bg_white/sprite_black" index="2"]
+[node name="button_op" type="TextureButton" parent="bg_white/sprite_black" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -123,7 +110,7 @@ expand = true
 script = ExtResource( 7 )
 _sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="button_end" type="TextureButton" parent="node_menu/bg_white/sprite_black" index="3"]
+[node name="button_end" type="TextureButton" parent="bg_white/sprite_black" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -149,7 +136,7 @@ expand = true
 script = ExtResource( 9 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="highlight" type="Sprite" parent="node_menu/bg_white/sprite_black" index="4"]
+[node name="highlight" type="Sprite" parent="bg_white/sprite_black" index="4"]
 
 position = Vector2( 305.713, 0.312017 )
 rotation = -1.5708
