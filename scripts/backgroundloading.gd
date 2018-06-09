@@ -9,7 +9,7 @@ func _ready():
 	current_scene = root.get_child(0).get_child(root.get_child_count() - 1)
 	pass
 func goto_scene(path):
-	loader = ResourceLoader.load_interactive(path)#coś nie tak
+	loader = ResourceLoader.load_interactive(path)
 	loader.poll()
 	print("loader",loader)
 	if loader == null:
@@ -35,11 +35,11 @@ func _process(delta):
 	var thread = OS.get_ticks_msec()
 	print("thread",thread)
 	while OS.get_ticks_msec() < thread + time_max:
-		poling#funkcja na dodawanie zasobów
+		#tutaj funkcja na dodawanie zasobów
 		var err = loader.poll()
 		print("err",err)
 		if err == 0:
-			var res = loader.get_resource() # = null do ***** nędzy
+			var res = loader.get_resource() # = null tutaj wychodzi nie wiadomo czemu
 			set_new_scene(res)
 		#elif err == OK:
 			#update_progress() dodać kod na aktualizację paska ładowania
