@@ -24,7 +24,7 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[node name="root" type="Control"]
+[node name="root" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -64,10 +64,9 @@ scale = Vector2( 0.833333, 0.833333 )
 [node name="animated_sprite" type="AnimatedSprite" parent="node" index="0"]
 
 position = Vector2( 808.127, 372.594 )
-scale = Vector2( 1, 1 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 11
+frame = 12
 playing = true
 _sections_unfolded = [ "Transform" ]
 
@@ -81,14 +80,12 @@ _sections_unfolded = [ "Transform" ]
 [node name="loading" type="Sprite" parent="node" index="2"]
 
 position = Vector2( 582.104, 184.995 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 13 )
 
 [node name="loading_complete" type="Sprite" parent="node" index="3"]
 
 visible = false
 position = Vector2( -6.52972, 411.377 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 14 )
 _sections_unfolded = [ "Visibility" ]
 

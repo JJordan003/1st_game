@@ -9,9 +9,9 @@
 [ext_resource path="res://scripts/menu_button_options.gd" type="Script" id=7]
 [ext_resource path="res://res/images/buttons/button_endgame.png" type="Texture" id=8]
 [ext_resource path="res://scripts/menu_button_end.gd" type="Script" id=9]
-[ext_resource path="res://res/images/placeholder.png" type="Texture" id=10]
+[ext_resource path="res://res/images/icon.png" type="Texture" id=10]
 
-[node name="node_menu" type="Node2D"]
+[node name="node_menu" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -130,7 +130,7 @@ _sections_unfolded = [ "Rect" ]
 [node name="Sprite" type="Sprite" parent="bg_black/sprite_white" index="4"]
 
 position = Vector2( 0, -400 )
-scale = Vector2( 1, 0.25 )
+scale = Vector2( 8, 2 )
 texture = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
 
