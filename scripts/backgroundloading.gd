@@ -35,7 +35,7 @@ func _process(delta):
 	var thread = OS.get_ticks_msec()
 	print("thread",thread)
 	while OS.get_ticks_msec() < thread + time_max:
-		poll()#funkcja na dodawanie zasobów
+		poling#funkcja na dodawanie zasobów
 		var err = loader.poll()
 		print("err",err)
 		if err == 0:
