@@ -8,7 +8,8 @@ func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
 	var x = preload("res://scenes/branches/menu.tscn").instance()
-	add_child(x)
+	get_child(0).get_child(0).free()
+	get_child(0).add_child(x)
 	pass
 
 #func _process(delta):

@@ -13,6 +13,6 @@ func _ready():
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
 #	pass
-func changelevel(x):
-	get_tree().change_scene(x)
+func changelevel(path):
+	get_tree().change_scene(path)
 	pass

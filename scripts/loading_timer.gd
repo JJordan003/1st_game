@@ -14,7 +14,7 @@ func _process(delta):
 	if a == true:
 		if Input.is_key_pressed(KEY_SPACE):
 			var nextscene = "res://scenes/main.tscn"
-			loading.changelevel(nextscene)
+			backgroundloading.goto_scene(nextscene)
 	pass
 
 

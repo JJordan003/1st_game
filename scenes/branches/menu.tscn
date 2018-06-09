@@ -6,7 +6,7 @@
 [ext_resource path="res://scripts/menu_button_options.gd" type="Script" id=4]
 [ext_resource path="res://scripts/menu_button_end.gd" type="Script" id=5]
 
-[node name="node_menu" type="Node2D" index="0"]
+[node name="node_menu" type="Node2D"]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -24,7 +24,9 @@ scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="button_new" type="Button" parent="bg_white" index="1"]
+[node name="buttons" type="Node2D" parent="bg_white" index="1"]
+
+[node name="button_new" type="Button" parent="bg_white/buttons" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -50,7 +52,7 @@ flat = false
 align = 1
 script = ExtResource( 3 )
 
-[node name="button_load" type="Button" parent="bg_white" index="2"]
+[node name="button_load" type="Button" parent="bg_white/buttons" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -75,7 +77,7 @@ text = "Load Game"
 flat = false
 align = 1
 
-[node name="burron_options" type="Button" parent="bg_white" index="3"]
+[node name="burron_options" type="Button" parent="bg_white/buttons" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -101,7 +103,7 @@ flat = false
 align = 1
 script = ExtResource( 4 )
 
-[node name="button_end" type="Button" parent="bg_white" index="4"]
+[node name="button_end" type="Button" parent="bg_white/buttons" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
