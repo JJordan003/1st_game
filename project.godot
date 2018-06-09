@@ -17,7 +17,11 @@ config/icon="res://res/images/icon.png"
 [autoload]
 
 loading="*res://scripts/loading.gd"
+<<<<<<< HEAD
 backgroundloading="*res://scripts/backgroundloading.gd"
+=======
+video_transform="*res://scripts/video_transform.gd"
+>>>>>>> 0e5bdb7dfa0988d963e7e47f6a43bfc0ff98f704
 
 [display]
 

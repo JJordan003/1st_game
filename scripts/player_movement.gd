@@ -49,8 +49,8 @@ func _process(delta):
 		ispressed = false
 	
 	position += velocity * delta
-	position.x = clamp(position.x, 0+(CHARACTER_WIDTH/2), screensize.x-(CHARACTER_WIDTH/2))
-	position.y = clamp(position.y, 0+(CHARACTER_HEIGHT/2), screensize.y-(CHARACTER_HEIGHT/2))
+	position.x = clamp(position.x, -screensize.x/2, screensize.x/2)
+	position.y = clamp(position.y, -screensize.y/2, screensize.y/2)
 #	print ("acceleration:", acceleration, ", velocity.y:", velocity.y, ", velocity_old:", velocity_old, ", position.y:", position.y, ", position_old:", position_old)
 	pass
 	

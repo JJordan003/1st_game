@@ -1,6 +1,10 @@
 [gd_scene load_steps=17 format=2]
 
+<<<<<<< HEAD
 [ext_resource path="res://scripts/backgroundloading.gd" type="Script" id=1]
+=======
+[ext_resource path="res://scripts/video_transform.gd" type="Script" id=1]
+>>>>>>> 0e5bdb7dfa0988d963e7e47f6a43bfc0ff98f704
 [ext_resource path="res://res/images/loading/background.png" type="Texture" id=2]
 [ext_resource path="res://scripts/loading_background.gd" type="Script" id=3]
 [ext_resource path="res://scripts/loading_timer.gd" type="Script" id=4]
@@ -25,14 +29,12 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[node name="root" type="Control" index="0"]
+[node name="root" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 40.0
-margin_bottom = 40.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -41,15 +43,25 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
 
-[node name="background" type="Sprite" parent="." index="0"]
+[node name="video" type="Node2D" parent="." index="0"]
 
+<<<<<<< HEAD
 position = Vector2( 1220, 449.996 )
 scale = Vector2( 1, 0.833315 )
 texture = ExtResource( 2 )
 script = ExtResource( 3 )
+=======
+script = ExtResource( 1 )
+>>>>>>> 0e5bdb7dfa0988d963e7e47f6a43bfc0ff98f704
 _sections_unfolded = [ "Transform" ]
 
-[node name="Timer" type="Timer" parent="." index="1"]
+[node name="background" type="Sprite" parent="video" index="0"]
+
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer" type="Timer" parent="video" index="1"]
 
 process_mode = 1
 wait_time = 1.0
@@ -58,38 +70,41 @@ autostart = false
 script = ExtResource( 4 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="node" type="Node2D" parent="." index="2"]
+[node name="node" type="Node2D" parent="video" index="2"]
 
-position = Vector2( 800, 450 )
-scale = Vector2( 0.833333, 0.833333 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="animated_sprite" type="AnimatedSprite" parent="node" index="0"]
+[node name="animated_sprite" type="AnimatedSprite" parent="video/node" index="0"]
 
 position = Vector2( 808.127, 372.594 )
 frames = SubResource( 1 )
 animation = "default"
+<<<<<<< HEAD
 frame = 2
+=======
+frame = 14
+>>>>>>> 0e5bdb7dfa0988d963e7e47f6a43bfc0ff98f704
 playing = true
 _sections_unfolded = [ "Transform" ]
 
-[node name="original_character" type="Sprite" parent="node" index="1"]
+[node name="original_character" type="Sprite" parent="video/node" index="1"]
 
-position = Vector2( -743.066, 146.669 )
+position = Vector2( -740, 146.669 )
 scale = Vector2( 1, 0.990734 )
 texture = ExtResource( 13 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="loading" type="Sprite" parent="node" index="2"]
+[node name="loading" type="Sprite" parent="video/node" index="2"]
 
 position = Vector2( 582.104, 184.995 )
 texture = ExtResource( 14 )
 
-[node name="loading_complete" type="Sprite" parent="node" index="3"]
+[node name="loading_complete" type="Sprite" parent="video/node" index="3"]
 
 position = Vector2( -6.52972, 411.377 )
 texture = ExtResource( 15 )
 _sections_unfolded = [ "Visibility" ]
 
-[connection signal="timeout" from="Timer" to="Timer" method="_on_Timer_timeout"]
+[connection signal="timeout" from="video/Timer" to="video/Timer" method="_on_Timer_timeout"]
 
 
