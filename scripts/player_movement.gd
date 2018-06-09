@@ -6,7 +6,7 @@ export (int) var GRAVITY = 25
 const CHARACTER_HEIGHT = 189
 const CHARACTER_WIDTH = 199
 var screensize
-var ispressed = false
+var ispressed
 var acceleration = 0
 var jump_height = -JUMP_HEIGHT_REVERSED #zmiana znaku przy exportowanej wartosci
 var velocity_old = 1
@@ -14,6 +14,10 @@ var position_old = 0
 
 func _ready():
 	screensize = get_viewport_rect().size
+	if Input.is_key_pressed(KEY_SPACE):
+		ispressed = true
+	else:
+		ispressed = false
 	pass
 
 func _process(delta):
@@ -47,6 +51,6 @@ func _process(delta):
 	position += velocity * delta
 	position.x = clamp(position.x, 0+(CHARACTER_WIDTH/2), screensize.x-(CHARACTER_WIDTH/2))
 	position.y = clamp(position.y, 0+(CHARACTER_HEIGHT/2), screensize.y-(CHARACTER_HEIGHT/2))
-	print ("acceleration:", acceleration, ", velocity.y:", velocity.y, ", velocity_old:", velocity_old, ", position.y:", position.y, ", position_old:", position_old)
+#	print ("acceleration:", acceleration, ", velocity.y:", velocity.y, ", velocity_old:", velocity_old, ", position.y:", position.y, ", position_old:", position_old)
 	pass
 	
