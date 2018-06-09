@@ -17,6 +17,7 @@ config/icon="res://res/images/icon.png"
 [autoload]
 
 loading="*res://scripts/loading.gd"
+video_transform="*res://scripts/video_transform.gd"
 
 [display]
 
@@ -27,19 +28,19 @@ window/stretch/mode="2d"
 
 [fps]
 
-Max Renderable Elements=false
+MaxRenderableElements=false
 
 [global]
 
-Max Renderable Elements=false
+MaxRenderableElements=false
 
 [lock]
 
-Max Renderable Elements=false
+MaxRenderableElements=false
 
 [max]
 
-Max Renderable Elements=false
+MaxRenderableElements=false
 
 [rendering]
 

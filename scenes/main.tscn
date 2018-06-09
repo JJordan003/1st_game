@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://res/images/bg_white.png" type="Texture" id=1]
-[ext_resource path="res://scripts/player_movement.gd" type="Script" id=2]
-[ext_resource path="res://res/images/circle.png" type="Texture" id=3]
+[ext_resource path="res://scripts/video_transform.gd" type="Script" id=1]
+[ext_resource path="res://res/images/bg_white.png" type="Texture" id=2]
+[ext_resource path="res://scripts/player_movement.gd" type="Script" id=3]
+[ext_resource path="res://res/images/circle.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="Control" type="Control" index="0"]
+[node name="Control" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -25,17 +26,17 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Rect" ]
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
+[node name="video" type="Node2D" parent="." index="0"]
 
-position = Vector2( 800, 450 )
-scale = Vector2( 0.833333, 0.833333 )
-texture = ExtResource( 1 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="video" index="0"]
+
+texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Player" type="Area2D" parent="." index="1"]
+[node name="Player" type="Area2D" parent="video" index="1"]
 
-position = Vector2( 800, 450 )
-scale = Vector2( 0.833333, 0.833333 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -43,19 +44,20 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 SPEED = 500
 JUMP_HEIGHT_REVERSED = 20
 GRAVITY = 25
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="video/Player" index="0"]
 
 scale = Vector2( 9.5, 10 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Sprite" type="Sprite" parent="Player" index="1"]
+[node name="Sprite" type="Sprite" parent="video/Player" index="1"]
 
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 
