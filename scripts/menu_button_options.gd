@@ -1,5 +1,4 @@
-extends TextureButton
-
+extends BaseButton
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
@@ -16,6 +15,6 @@ func _ready():
 func _pressed():
 	var x = preload("res://scenes/branches/node_options.tscn").instance()
 	print(x)
-	get_parent().get_parent().get_parent().get_parent().add_child(x)
-	get_parent().get_parent().get_parent().free()
+	get_parent().get_parent().get_parent().add_child(x)
+	get_parent().get_parent().free()
 	pass
