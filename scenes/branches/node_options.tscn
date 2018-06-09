@@ -6,20 +6,18 @@
 [ext_resource path="res://scripts/options_button_back.gd" type="Script" id=4]
 [ext_resource path="res://res/images/bg_black.png" type="Texture" id=5]
 
-[node name="node_options" type="Node2D" index="0"]
+[node name="node_options" type="Node2D"]
 
-_sections_unfolded = [ "Transform", "Visibility" ]
+position = Vector2( 400.727, 450 )
+scale = Vector2( 0.415909, 0.833333 )
 
-[node name="video" type="Node2D" parent="." index="0"]
+[node name="bg_white" type="Sprite" parent="." index="0"]
 
-_sections_unfolded = [ "Transform" ]
-
-[node name="bg_white" type="Sprite" parent="video" index="0"]
-
+position = Vector2( 960.001, 0 )
+scale = Vector2( 2.00364, 1 )
 texture = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="arrow_left" type="TextureButton" parent="video/bg_white" index="0"]
+[node name="arrow_left" type="TextureButton" parent="bg_white" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -45,7 +43,7 @@ texture_normal = ExtResource( 2 )
 script = ExtResource( 3 )
 _sections_unfolded = [ "Rect" ]
 
-[node name="arrow_right" type="TextureButton" parent="video/bg_white" index="1"]
+[node name="arrow_right" type="TextureButton" parent="bg_white" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -72,7 +70,7 @@ texture_normal = ExtResource( 2 )
 script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Button" type="Button" parent="video/bg_white" index="2"]
+[node name="Button" type="Button" parent="bg_white" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -99,10 +97,10 @@ align = 1
 script = ExtResource( 4 )
 _sections_unfolded = [ "Anchor", "Rect" ]
 
-[node name="bg_black" type="Sprite" parent="video" index="1"]
+[node name="bg_black" type="Sprite" parent="." index="1"]
 
-position = Vector2( -480, 0 )
-scale = Vector2( 0.5, 1 )
+position = Vector2( -1.74847, 0 )
+scale = Vector2( 1.00182, 1 )
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
