@@ -12,6 +12,7 @@
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="video" type="Node2D" parent="." index="0"]
 
 _sections_unfolded = [ "Transform" ]
@@ -22,6 +23,21 @@ texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="arrow_left" type="TextureButton" parent="video/bg_white" index="0"]
+=======
+[node name="bg_black" type="Sprite" parent="." index="0"]
+
+position = Vector2( -0.00012207, 0 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="bg_white" type="Sprite" parent="." index="1"]
+
+position = Vector2( 1920, 0 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="button_back" type="TextureButton" parent="bg_white" index="0"]
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 =======
 [node name="bg_black" type="Sprite" parent="." index="0"]
 
@@ -62,7 +78,11 @@ script = ExtResource( 4 )
 _sections_unfolded = [ "Textures" ]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="arrow_right" type="TextureButton" parent="video/bg_white" index="1"]
+=======
+[node name="arrow_left" type="TextureButton" parent="bg_white" index="1"]
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 =======
 [node name="arrow_left" type="TextureButton" parent="bg_white" index="1"]
 >>>>>>> parent of 8a938aa... Zmiana przycisków
@@ -92,7 +112,11 @@ script = ExtResource( 6 )
 _sections_unfolded = [ "Rect" ]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="Button" type="Button" parent="video/bg_white" index="2"]
+=======
+[node name="arrow_right" type="TextureButton" parent="bg_white" index="2"]
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 =======
 [node name="arrow_right" type="TextureButton" parent="bg_white" index="2"]
 >>>>>>> parent of 8a938aa... Zmiana przycisków
@@ -119,6 +143,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 <<<<<<< HEAD
+<<<<<<< HEAD
 text = "Back"
 flat = false
 align = 1
@@ -131,6 +156,11 @@ position = Vector2( -480, 0 )
 scale = Vector2( 0.5, 1 )
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
+=======
+texture_normal = ExtResource( 5 )
+script = ExtResource( 6 )
+_sections_unfolded = [ "Rect", "Textures" ]
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 =======
 texture_normal = ExtResource( 5 )
 script = ExtResource( 6 )

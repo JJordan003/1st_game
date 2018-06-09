@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/video_transform.gd" type="Script" id=1]
@@ -20,6 +21,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="bg" type="Sprite" parent="." index="0"]
 =======
+=======
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://res/images/bg_black.png" type="Texture" id=1]
@@ -38,11 +41,15 @@ _sections_unfolded = [ "Transform" ]
 _sections_unfolded = [ "Transform" ]
 
 [node name="bg_black" type="Sprite" parent="." index="0"]
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [node name="white_bar" type="Sprite" parent="bg" index="0"]
 
@@ -68,11 +75,19 @@ _sections_unfolded = [ "Transform" ]
 [node name="sprite_white" type="Sprite" parent="bg_black" index="0"]
 
 position = Vector2( -500, 0 )
+=======
+[node name="sprite_white" type="Sprite" parent="bg_black" index="0"]
+
+position = Vector2( -500, 0 )
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 scale = Vector2( 0.25, 1 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="button_new" type="TextureButton" parent="bg_black/sprite_white" index="0"]
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 
 anchor_left = 0.0
@@ -80,15 +95,21 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 margin_left = -75.0
 margin_top = -181.0
 margin_right = 75.0
 margin_bottom = -111.0
 =======
+=======
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 margin_left = -320.0
 margin_top = -161.0
 margin_bottom = -116.0
 rect_scale = Vector2( 2, 1.5 )
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -101,6 +122,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+<<<<<<< HEAD
 <<<<<<< HEAD
 text = "New Game"
 flat = false
@@ -114,11 +136,16 @@ _sections_unfolded = [ "Rect" ]
 [node name="button_load" type="Button" parent="bg/white_bar" index="2"]
 >>>>>>> 0e5bdb7dfa0988d963e7e47f6a43bfc0ff98f704
 =======
+=======
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 texture_normal = ExtResource( 3 )
 script = ExtResource( 4 )
 _sections_unfolded = [ "Rect" ]
 
 [node name="button_load" type="TextureButton" parent="bg_black/sprite_white" index="1"]
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 
 anchor_left = 0.0
@@ -126,15 +153,21 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 margin_left = -75.0
 margin_top = -97.0
 margin_right = 75.0
 margin_bottom = -27.0
 =======
+=======
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 margin_left = -332.0
 margin_top = -80.0
 margin_bottom = -33.0
 rect_scale = Vector2( 2, 1.5 )
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -147,6 +180,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+<<<<<<< HEAD
 <<<<<<< HEAD
 text = "Load Game"
 flat = false
@@ -163,15 +197,24 @@ texture_normal = ExtResource( 5 )
 
 [node name="button_op" type="TextureButton" parent="bg_black/sprite_white" index="2"]
 >>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
+texture_normal = ExtResource( 5 )
+
+[node name="button_op" type="TextureButton" parent="bg_black/sprite_white" index="2"]
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 margin_left = -75.0
 margin_top = -12.0
 margin_right = 75.0
+=======
+margin_left = -226.0
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 =======
 margin_left = -226.0
 >>>>>>> parent of 8a938aa... Zmiana przycisków
@@ -188,6 +231,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+<<<<<<< HEAD
 <<<<<<< HEAD
 text = "Options"
 flat = false
@@ -207,22 +251,35 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="button_end" type="TextureButton" parent="bg_black/sprite_white" index="3"]
 >>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
+texture_normal = ExtResource( 6 )
+script = ExtResource( 7 )
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="button_end" type="TextureButton" parent="bg_black/sprite_white" index="3"]
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 margin_left = -75.0
 margin_top = 72.0
 margin_right = 75.0
 margin_bottom = 142.0
 =======
+=======
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 margin_left = -300.0
 margin_top = 80.0
 margin_right = 1.0
 margin_bottom = 127.0
 rect_scale = Vector2( 2, 1.5 )
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -236,12 +293,15 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 <<<<<<< HEAD
+<<<<<<< HEAD
 text = "End Game"
 flat = false
 align = 1
 script = ExtResource( 7 )
 _sections_unfolded = [ "Rect" ]
 =======
+=======
+>>>>>>> parent of 8a938aa... Zmiana przycisków
 texture_normal = ExtResource( 8 )
 script = ExtResource( 9 )
 _sections_unfolded = [ "Rect" ]
@@ -252,6 +312,9 @@ position = Vector2( 0, -400 )
 scale = Vector2( 8, 2 )
 texture = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
+<<<<<<< HEAD
+>>>>>>> parent of 8a938aa... Zmiana przycisków
+=======
 >>>>>>> parent of 8a938aa... Zmiana przycisków
 
 
